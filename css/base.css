@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*样式重置*/
-h3,h4{
+h3,h4,h5{
 	margin: 0;
 }
 a{color: #333333;}
@@ -14,6 +14,13 @@ ul{
 }
 img{
 	vertical-align: middle;
+}
+.clear::before,
+.clear::after{
+	content: " ";
+	display: block;
+	visibility: hidden;
+	clear: both;
 }
 /*自定义字体*/
 @font-face {
@@ -190,6 +197,60 @@ img{
     color: #fff;
 }
 /*end shopnav*/
+
+/*navCir*/
+#navCir {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	background: #FFFFFF;
+	border-top: 1px solid #EEEEEE;
+}
+#navCir > ul > li{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+#navCir > ul > li > a{
+	display: inline-block;
+	padding: 5px 10px;
+}
+#navCir > ul > li > a:focus,
+#navCir > ul > li > a:hover{
+	text-decoration: none;
+}
+#navCir > ul > li > a i{
+	font-size: 18px;
+	line-height: 18px;
+}
+#navCir .click > a{
+	color: #E92322;
+}
+
+.am-icon-home:before {
+    content: "\f015";
+}
+.am-icon-list:before {
+    content: "\f03a";
+}
+.am-icon-shopping-basket:before {
+    content: "\f291";
+}
+.am-icon-user:before {
+    content: "\f007";
+}
+
+@media only screen and (min-width: 640px) {
+	#navCir {
+		display: none;
+	}
+}
+/*end navCir*/
 
 /*测试样式*/
 
