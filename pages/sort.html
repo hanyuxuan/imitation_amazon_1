@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>全部分类</title>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sort.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="topbar hidden-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-lg-offset-1">
+							<a href="#">亲，请登录 免费注册</a>
+						</div>
+						<div class="col-sm-7 text-right">
+							<a href="../index.html">商城首页</a>
+							<a href="#"><i class="am-icon-user"></i>个人中心</a>
+							<a href="#"><i class="am-icon-shopping-cart"></i>购物车0</a>
+							<a href="#"><i class="am-icon-heart"></i>收藏夹</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topsearch">
+				<div class="container">
+					<div class="logo pull-left">
+						<a href="../index.html">
+							<img src="../images/base/logobig.png" alt="logo" />
+							<img src="../images/base/logo.png" alt="logo" />
+						</a>
+					</div>
+					<div class="search-bar">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="搜索">
+							<span class="input-group-btn">
+						        <button class="btn btn-default" type="button">搜索</button>
+						    </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/头部-->
+		<!--移动端引导-->
+		<div id="navCir">
+			<ul>
+				<li>
+					<a href="#">
+						<i class="am-icon-home"></i><br />
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="click">
+					<a href="#">
+						<i class="am-icon-list"></i><br />
+						<span>分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="am-icon-shopping-basket"></i><br />
+						<span>购物车</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="am-icon-user"></i><br />
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--/移动端引导-->
+
+		<!--全部分类内容-->
+		<div id="sort-container" class="clear">
+			<div class="container-header">
+				<h3 class="pull-left">全部分类</h3>
+				<a class="pull-right" href="../index.html">返回</a>
+			</div>
+			<div class="sort-content-nav pull-left">
+				<div class="sidebar">
+					<ul id="js-sortNav" class="category-list">
+						<li class="active">
+							<h3>
+								<i><img src="../images/indexImg/cake.png" alt="cake"/></i>
+								<a href="#">点心/蛋糕</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/cookies.png" alt="cake"/></i>
+								<a href="#">饼干/膨化</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/meat.png" alt="cake"/></i>
+								<a href="#">熟食/肉类</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/bamboo.png" alt="cake"/></i>
+								<a href="#">素食/卤味</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/nut.png" alt="cake"/></i>
+								<a href="#">坚果/炒货</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/candy.png" alt="cake"/></i>
+								<a href="#">糖果/蜜饯</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/chocolate.png" alt="cake"/></i>
+								<a href="#">巧克力</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/fish.png" alt="cake"/></i>
+								<a href="#">海味/河鲜</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/tea.png" alt="cake"/></i>
+								<a href="#">花茶/果茶</a>
+							</h3>
+							<em>></em>
+						</li>
+						<li>
+							<h3>
+								<i><img src="../images/indexImg/package.png" alt="cake"/></i>
+								<a href="#">品牌/礼包</a>
+							</h3>
+							<em>></em>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="sort-content-info">
+				<div class="sort-content-info-title">为您推荐</div>
+				<div class="sort-content-info-ad"><img src="../images/sort/TJ.jpg" alt="生鲜元宵惠" /></div>
+				<div class="sort-content-info-de js-sort-show">
+					<div class="col-xs-12 col-sm-6">
+						<h4>蛋糕</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>点心</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>饼干</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>薯片</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>虾条</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>猪肉脯</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>牛肉丝</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>小香肠</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>豆干</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>干笋</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>鸭脖</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>坚果</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>锅巴</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>糖果</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>蜜饯</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>巧克力</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>果冻</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>海带丝</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>小鱼干</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>鱿鱼丝</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>糖果</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>蜜饯</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-content-info-de">
+					<div class="col-xs-12 col-sm-6">
+						<h4>巧克力</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>果冻</h4>
+						<ul>
+							<li>
+								<a href="#">蒸蛋糕</a>
+							</li>
+							<li>
+								<a href="#">脱水蛋糕</a>
+							</li>
+							<li>
+								<a href="#">瑞士卷</a>
+							</li>
+							<li>
+								<a href="#">软面包</a>
+							</li>
+							<li>
+								<a href="#">马卡龙</a>
+							</li>
+							<li>
+								<a href="#">千层饼</a>
+							</li>
+							<li>
+								<a href="#">甜甜圈</a>
+							</li>
+							<li>
+								<a href="#">蒸三明治</a>
+							</li>
+							<li>
+								<a href="#">铜锣烧</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/全部分类内容-->
+		<script src="../lib/jquery/jquery.min.js"></script>
+		<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/sort.js"></script>
+	</body>
+
+</html>

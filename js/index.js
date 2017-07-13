@@ -37,25 +37,25 @@ $(function() {
 
 	/*移动端手指控制轮播图*/
 	var $adCarousel = $("#nav > .container .carousel");
-		
-	$adCarousel.one("touchstart",function(){
+
+	$adCarousel.one("touchstart", function() {
 		FingersSlidingdirection();
 	})
 
-	function FingersSlidingdirection(){
+	function FingersSlidingdirection() {
 		var startPos = 0;
 		var endPos = 0;
-		$adCarousel.on("touchstart",function(e){
+		$adCarousel.on("touchstart", function(e) {
 			startPos = e.originalEvent.changedTouches[0].clientX;
 		})
-		$adCarousel.on("touchmove",function(e){
+		$adCarousel.on("touchmove", function(e) {
 			endPos = e.originalEvent.changedTouches[0].clientX;
 		})
-		$adCarousel.on("touchend",function(e){
-			if(endPos - startPos >= 50){
+		$adCarousel.on("touchend", function(e) {
+			if(endPos - startPos >= 50) {
 				//prev
 				$adCarousel.carousel('prev');
-			}else if(endPos - startPos <= 50){
+			} else if(endPos - startPos <= 50) {
 				//next
 				$adCarousel.carousel('next');
 			}
@@ -64,26 +64,81 @@ $(function() {
 	/*end移动端手指控制轮播图*/
 
 	/*侧面菜单*/
-	$('[class ^= "side-"]').on('mouseover',function(){
+	$('[class ^= "side-"]').on('mouseover', function() {
 		$(this).addClass('a-hover');
-		if($(this).find('.js-show') != null){
-			$(this).find('.js-show').css('display','block');
+		if($(this).find('.js-show') != null) {
+			$(this).find('.js-show').css('display', 'block');
+		}
+		if($(this).find('.animate-to-right').data('right')) {
+			animate($(this).find('.animate-to-right').get(0), {
+				"left": -93
+			})
 		}
 	})
-	$('[class ^= "side-"]').on('mouseout',function(){
+	$('[class ^= "side-"]').on('mouseout', function() {
 		$(this).removeClass('a-hover');
-		$('.js-show').css('display','none');
+		$('.js-show').css('display', 'none');
+		if($(this).find('.animate-to-right').data('right')) {
+			animate($(this).find('.animate-to-right').get(0), {
+				"left": -120
+			})
+		}
 	})
-	
-	$('.user-info').on('mouseout',function(){
-		$(this).css('display','none');
+
+	$('.user-info').on('mouseout', function() {
+		$(this).css('display', 'none');
 	})
-	
-//	var toTop = document.getElementById("js_toTop");
-//	var header = document.getElementById("header");
-//	toTop.onclick = function(){
-//		animate(header,{"height":0},function(){
-//			console.log('到顶了')
-//		});
-//	}
+
+	//	百叶窗
+/*
+	function startMove(ele, attr, dis, speed) {
+		var timer = null;
+		clearInterval(timer);
+		timer = setInterval(function() {
+			var prevdis = parseInt(getStyle(ele, attr));
+			var newDis = 0;
+
+			if(prevdis < dis) {
+				newDis = prevdis + speed;
+				if(newDis >= dis) {
+					newDis = dis;
+					clearInterval(timer);
+				}
+			} else {
+				newDis = prevdis - speed;
+				if(newDis <= dis) {
+					newDis = dis;
+					clearInterval(timer);
+				}
+			}
+
+			ele.style[attr] = newDis + 'px';
+		}, 100);
+	}
+	function shutter(){
+		
+		var newsCont = $('#js-news-content span');
+		var num = 0;
+		var newsTimer = null;
+		var timer = null;
+		var dbtn = true;
+		clearInterval(newsTimer);
+		newsTimer = setInterval(function() {
+			timer = setInterval(function() {
+				if(num == newsCont.length) {
+					clearInterval(timer);
+					num = 0;
+					dbtn = !dbtn;
+				} else if(dbtn) {
+					startMove(newsCont[num], 'top', 0, 8);
+					num++;
+				} else {
+					startMove(newsCont[num], 'top', -20, 8);
+					num++
+				}
+			}, 50);
+		}, 4000);
+	}
+	shutter();
+*/
 })

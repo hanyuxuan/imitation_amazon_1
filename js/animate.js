@@ -3,7 +3,7 @@
  */
 // 多个属性运动框架  添加回调函数
 function animate(obj,json,fn) {  // 给谁    json
-    clearInterval(obj.timer);
+	clearInterval(obj.timer);
     obj.timer = setInterval(function() {
         var flag = true;  // 用来判断是否停止定时器   一定写到遍历的外面
         for(var attr in json){   // attr  属性     json[attr]  值
